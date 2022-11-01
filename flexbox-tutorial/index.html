@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container{
+    background: pink;
+    height: 50vh;
+    width: 50vw;
+    padding: 0.5em;
+    margin: 25vh auto 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* shorthand
+    * flex-flow: row nowrap;
+    */
+
+    /*
+    * 
+    */
+    justify-content: space-evenly;
+  }
+
+  .item{
+    background: lightblue;
+    margin: 0.5rem;
+    /*
+    * flex-flow: row nowrap; 일 때 item에 width를 %로 추가하면 의도한 것과 다르게 동작한다. 
+      지정값이 아니라 컨테이너 크기의 증감에 따라 신축함
+      width: 25%
+    */
+
+    /*
+    * flex-flow: column nowrap; 에서도 같은 현상 확인
+      height: 25%
+    */    
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="item">Flex item 1</div>
+    <div class="item">Flex item 2</div>
+    <div class="item">Flex item 3</div>
+    <div class="item">Flex item 4</div>
+    <div class="item">Flex item 5</div>
+  </div>
+</body>
+
+</html>
