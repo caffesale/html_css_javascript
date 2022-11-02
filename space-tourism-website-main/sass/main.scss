@@ -1,4 +1,5 @@
 @use './abstracts';
+@use './utilities/';
 
 body {
     font-size: abstracts.$font-size;
