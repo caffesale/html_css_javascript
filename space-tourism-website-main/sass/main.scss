@@ -1,0 +1,5 @@
+@use './abstracts';
+
+body {
+    font-size: abstracts.$font-size;
+}
