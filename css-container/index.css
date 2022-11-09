@@ -19,6 +19,8 @@ body {
 @container body (max-width: 1000px) {
   .card {
     background: red;
+    /**/
+    background-color: blue;
   }
 }
 
