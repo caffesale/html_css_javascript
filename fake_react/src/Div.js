@@ -1,10 +1,10 @@
 
-export default function Div({ $app, initialState }) {
+export default function Div({ $target, initialState }) {
   this.state = initialState;
 
-  this.$target = document.createElement('div')
-  this.$target.className = 'test-div';
-  $app.appendChild(this.$target);
+  this.$element = document.createElement('div')
+  this.$element.className = 'test-div';
+  $target.appendChild(this.$element);
 
   this.render = () => {
     this.$target.innerHTML = `<div>${this.state}</div>`
