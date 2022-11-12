@@ -1,0 +1,15 @@
+form {
+  display: grid;
+  gap: 1.5rem;
+  width: min(20rem, 100%);
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.input-hint {
+  margin: 0;
+}
