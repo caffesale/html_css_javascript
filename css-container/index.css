@@ -1,0 +1,35 @@
+.btn.btn-ouline:hover, .btn.btn-ouline:focus {
+  background: hsl(200, 50%, 90%);
+}
+
+.btn + .btn {
+  margin-left: .25rem;
+}
+
+/* 추가되는 부분 */
+main, .sidebar {
+  container-type: inline-size;
+}
+
+body { 
+  container-type: inline-size;
+  container-name: body;
+}
+
+@container body (max-width: 1000px) {
+  .card {
+    background: red;
+    /**/
+    background-color: blue;
+  }
+}
+
+@container (max-width: 800px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card-header {
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+// @use 'sass:map';
+
+$color : (
+  dark: hsl(230 35% 7%),
+  light: hsl(231 77% 90%),
+  white: hsl(0 0% 100%)
+);
+
+.bg-dark {
+  background-color: map.get($color, "dark");
+}
+
+.bg-accent {
+  background-color: map.get($color, "light");
+}
+
+.bg-white {
+  background-color: map.get($color, "white");
+}
+
+.text-dark {
+  background-color: map.get($color, "dark");
+}
+
+.text-accent {
+  background-color: map.get($color, "light");
+}
+
+.text-white {
+  background-color: map.get($color, "white");
+}
+
