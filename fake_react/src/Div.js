@@ -9,4 +9,6 @@ export default function Div({ $target, initialState }) {
   this.render = () => {
     this.$target.innerHTML = `<div>${this.state}</div>`
   }
+
+  this.render()
 }
