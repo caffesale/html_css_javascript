@@ -1,0 +1,13 @@
+.shape {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+  /* border-top-left-radius: 5rem 10rem; */
+  border-radius: 59% 41% 69% 31% / 69% 38% 62% 31% ;
+  transition: border-radius 500ms ease-in-out;
+}
+
+.shape:hover {
+  
+  border-radius: 51% 49% 69% 31% / 23% 86% 14% 77%  ;
+}
