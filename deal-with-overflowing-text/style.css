@@ -1,0 +1,30 @@
+.css-is-awesome {
+  border: 5px solid;
+  padding: 0.125rem 0.5rem;
+  width: 260px;
+
+  /* overflow-wrap: break-word; */
+
+  /* width: min-content; */
+
+  /* width: fit-content; */
+}
+
+/* general styling */
+
+.css-is-awesome > p {
+  font-size: 19cqi;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+
+}
