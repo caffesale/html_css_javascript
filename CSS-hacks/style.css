@@ -1,0 +1,43 @@
+.button {
+  display: inline-flex;
+  cursor: pointer;
+  border: 0;
+  padding: 0.5rem 1.5rem;
+  background-color: aqua;
+  color: red;
+  
+  /* 버튼의 크기가 커지면 기존에 형태를 잡아두었던 border-radius 값이 어긋난다. */
+  /* border-radius: 50px; */
+  font-size: 4rem;
+
+  /* vmax단위를 쓰면 영향을 받지 않는다. */
+  border-radius: 100vmax;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  width: min(90%, 45rem);
+  height: min-content;
+  margin: auto;
+
+  /* box-shadow 속성은 중첩이 가능하다. 모달의 배경색을 어둡게 덧칠하려면 */
+  box-shadow: 0 0 0 100vmax rgba(0 0 0 / 0.5), 0 0 2rem rgba(0 0 0 / 0.5);
+}
+
+.full-width {
+  /* 컨테이너를 넘어서 좌우로 쭈욱 늘어선 컨텐츠를 쓰고 싶을 때  */
+  margin-bottom: 100vw;
+  width: 100vw;
+  margin-inline: 50%;
+  transform: translateX(-50%);
+}
+
+.full-width {
+  /* 컨텐츠를 왼쪽에 붙지 않게 하면서 만들기 */
+  box-shadow: 0 0 0 100vmax blue;
+  path: inset(0 -100vmax);
+  n-bottom: 100vw;
+}
