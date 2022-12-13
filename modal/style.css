@@ -1,0 +1,28 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 5rem;
+  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header ul {
+  margin-inline: auto;
+
+}
+
+header ul > li:hover {
+  box-shadow: 0 5px 0 -4px blue;
+}
